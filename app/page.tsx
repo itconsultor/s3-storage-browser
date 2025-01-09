@@ -43,7 +43,7 @@ export default function App() {
               <img
                 src="https://preverity.com/wp-content/uploads/2022/11/logo.svg" // Replace with your logo URL
                 alt="Custom Logo"
-                style={{ width: '150px', height: 'auto' }}
+                style={{ width: '350px', height: 'auto' }}
               />
               <h2 style={{ margin: '10px 0' }}>Welcome to Preverity S3 Bucket files</h2>
             </div>
