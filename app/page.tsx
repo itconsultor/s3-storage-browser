@@ -34,7 +34,24 @@ export default function App() {
   }
 
   return (
-    <Authenticator hideSignUp>
+    <Authenticator 
+      hideSignUp
+      components={{
+        Header() {
+          return (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
+              <img
+                src="https://preverity.com/wp-content/uploads/2022/11/logo.svg" // Replace with your logo URL
+                alt="Custom Logo"
+                style={{ width: '150px', height: 'auto' }}
+              />
+              <h2 style={{ margin: '10px 0' }}>Welcome to Preverity S3 Bucket files</h2>
+            </div>
+          );
+        },
+      }}
+    >
+    
       {({ signOut, user }) => (
         <main>
             <h1>Hello {user?.signInDetails?.loginId}</h1>
