@@ -24,7 +24,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    listTodos();
+    /*listTodos();*/ 
   }, []);
 
   function createTodo() {
